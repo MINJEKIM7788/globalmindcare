@@ -68,7 +68,7 @@
 
         .hero {
             background-image: url('images/michael-benz--IZ2sgQKIhM-unsplash.jpg');
-            /* Updated with your image */
+            /* Updated with your new image */
             background-size: cover;
             background-position: bottom;
             /* Change this to show the bottom part of the image */
@@ -88,6 +88,8 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+            flex-wrap: wrap;
+            /* Allow menu items to wrap on smaller screens */
         }
 
         .hero .menu a {
@@ -211,6 +213,49 @@
             vertical-align: middle;
             margin-right: 10px;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav .logo {
+                font-size: 1.4em;
+                left: 12px;
+            }
+
+            nav ul li {
+                margin: 0 8px;
+            }
+
+            nav ul li a {
+                font-size: 0.9em;
+            }
+
+            .hero {
+                padding: 80px 10px;
+                margin-top: 72px;
+            }
+
+            .hero .menu a {
+                font-size: 1.5em;
+                padding: 15px 30px;
+            }
+
+            .section {
+                padding: 40px 10px;
+                margin: 10px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .section p {
+                font-size: 1em;
+            }
+
+            .section ul li {
+                font-size: 1em;
+            }
+        }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -241,7 +286,6 @@
                 <p>GlobalMindCare is dedicated to fostering mental and physical well-being through meditation,
                     motivational content, and insightful practices. Our mission is to provide resources that help
                     individuals lead balanced and fulfilling lives.</p>
-                <p><i class="fas fa-info-circle"></i> About Us</p>
             </div>
         </section>
         <section id="meditation" class="section">
