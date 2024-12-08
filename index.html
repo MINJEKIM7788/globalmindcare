@@ -2,22 +2,34 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlobalMindCare</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalMindCare</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Library for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  
 
 <body>
   <!-- Header -->
   <header>
     <nav class="navbar">
       <div class="logo">GMC</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>      
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/design.html">3D Design</a></li>
+        <li><a href="pages/prototype.html">Prototype</a></li>
         <li><a href="pages/shop.html">Shop</a></li>
         <li><a href="pages/contact.html">Contact</a></li>
       </ul>
@@ -27,8 +39,8 @@
 
   <!-- Hero Section -->
   <section id="hero">
-    <div class="hero-content">
-      <h1>Empower Your <span>Mind</span></h1>
+    <div class="hero-content" data-aos="fade-up">
+      <h1 class="animated-heading">Empower Your <span>Mind</span></h1>
       <p>Take the first step toward mental wellness with solutions designed for you.</p>
       <div class="cta-group">
         <a href="pages/shop.html" class="cta-btn">Explore Solutions</a>
@@ -37,14 +49,51 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 GlobalMindCare. All Rights Reserved.</p>
-  </footer>
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container" data-aos="fade-up">
+      <h2>Why Choose Us?</h2>
+      <div class="features-grid">
+        <div class="feature-item" data-aos="fade-right">
+          <h3>Personalized Care</h3>
+          <p>We tailor our services to meet your unique mental health needs.</p>
+        </div>
+        <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+          <h3>Trusted Resources</h3>
+          <p>Explore a curated selection of products and tools for your well-being.</p>
+        </div>
+        <div class="feature-item" data-aos="fade-right" data-aos-delay="400">
+          <h3>Expert Guidance</h3>
+          <p>Work with experienced professionals dedicated to your growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+      <p>&copy; 2024 GlobalMindCare. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+  <!-- Scroll-to-Top Button -->
+  <button id="scroll-to-top" title="Go to top">↑</button>
+  
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/script.js"></script>
+  </body>
+  
+
 </body>
 
 </html>
-
-<!-- Test change for Git -->
